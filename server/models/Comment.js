@@ -1,12 +1,9 @@
 import mongoose from "mongoose";
 
-/**
+/*
  * Comment Schema
- *
- * Represents user commentary on a specific blog post.
- * Establishes two normalized relationships:
- * 1. post   -> references 'Post' (identifies the article being commented on)
- * 2. author -> references 'User' (identifies the comment author)
+ * post   -> references 'Post' (identifies the article being commented on)
+ * author -> references 'User' (identifies the comment author)
  */
 const commentSchema = new mongoose.Schema(
   {
@@ -32,9 +29,7 @@ const commentSchema = new mongoose.Schema(
   }
 );
 
-// ==========================================
-// INDEXES
-// ==========================================
+
 // 1. Index on 'post' enables high-performance lookups of all comments for an article
 //    (e.g., db.comments.find({ post: postId }))
 commentSchema.index({ post: 1 });

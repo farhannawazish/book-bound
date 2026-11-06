@@ -1,9 +1,7 @@
 import mongoose from "mongoose";
 
-/**
+/*
  * User Schema
- *
- * Represents an authenticated user in the blogging platform.
  * Authors of posts and comments reference this model via their ObjectId.
  */
 const userSchema = new mongoose.Schema(
@@ -46,7 +44,7 @@ const userSchema = new mongoose.Schema(
     },
   },
   {
-    timestamps: true, // Automatically manages createdAt and updatedAt fields
+    timestamps: true, 
   }
 );
 

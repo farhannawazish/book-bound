@@ -93,9 +93,7 @@ const handleSlugGeneration = function () {
 postSchema.pre("validate", handleSlugGeneration);
 postSchema.pre("save", handleSlugGeneration);
 
-// ==========================================
-// INDEXES
-// ==========================================
+
 // 1. Unique index on slug for fast O(1) single-post routing lookup (GET /posts/:slug)
 postSchema.index({ slug: 1 }, { unique: true });
 
