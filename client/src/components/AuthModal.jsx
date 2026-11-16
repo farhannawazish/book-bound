@@ -261,3 +261,4 @@ export const AuthModal = ({ isOpen, onClose, defaultMode = "login", onSuccess })
     </div>
   );
 };
+

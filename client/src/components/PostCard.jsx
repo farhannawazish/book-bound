@@ -192,3 +192,4 @@ export const PostCard = ({ post, onSelectPost }) => {
     </article>
   );
 };
+

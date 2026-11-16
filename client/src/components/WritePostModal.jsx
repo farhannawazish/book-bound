@@ -252,3 +252,4 @@ export const WritePostModal = ({ isOpen, onClose, onPostCreated }) => {
     </div>
   );
 };
+

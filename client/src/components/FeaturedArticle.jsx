@@ -288,3 +288,4 @@ export const FeaturedArticle = ({ leadPost, sidePosts, onSelectPost }) => {
     </section>
   );
 };
+
