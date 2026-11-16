@@ -1,0 +1,37 @@
+node_modules/
+*.env
+*.git/
+*.env.example
+
+./.gitignore
+.github/
+.vscode/
+
+# Dependencies
+node_modules/
+yarn.lock
+package-lock.json
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Build artifacts
+dist/
+build/
+*.log
+
+# Editor files
+.idea/
+*.swp
+*.swo
+*.swo1
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage/
+*.lcov
